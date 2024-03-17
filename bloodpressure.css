@@ -1,0 +1,120 @@
+/* Resetting default browser styles */
+body, h1, h2, p, ul, li, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up basic typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: bold;
+    color: #0066ff;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Styling header */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling main content */
+main {
+    padding: 20px;
+}
+
+/* Styling sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Styling causes and symptoms sections */
+#causes, #symptoms {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#causes h2, #symptoms h2 {
+    color: #ff6600;
+    font-size: 1.6em;
+}
+
+/* Styling treatment and prevention sections */
+#treatment, #prevention {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#treatment h2, #prevention h2 {
+    color: #ff9900;
+    font-size: 1.6em;
+}
+
+/* Styling rate section */
+#rate {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rate h2 {
+    color: #ff3300;
+    font-size: 1.6em;
+}
+
+/* Styling traditional remedies section */
+#traditional {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#traditional h2 {
+    color: #ff6600;
+    font-size: 1.6em;
+}
+
+/* Styling comment textarea */
+#comment {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+/* Styling footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

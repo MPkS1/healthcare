@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="symptoms.css">
+    <title>Select Symptoms</title>
+</head>
+<body>
+    <div class="container">
+        <h1><i>Select Symptoms</i></h1>
+        <form id="symptomForm" onsubmit="redirectToSymptomPage()">
+            <div class="form-group">
+                <label for="symptom">Choose a symptom:</label>
+                <select class="form-control" id="symptom" name="symptom">
+                    <option value="" disabled selected hidden>Select Symptoms</option>
+                    <option value="headache">headache</option>
+                    <option value="fatigue">fatigue</option>
+                    <option value="vomiting">vomiting</option>
+                    <option value="feaver">fever</option>
+                    <option value="nausea">nausea</option>
+                    <option value="cough">cough</option>
+                    <option value="muscleorjointpain">muscleorjointpain</option>
+                    <option value="dizziness">dizziness</option>
+                    <option value="chestpain">chestpain</option>
+                    <option value="swelling">swelling</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to handle form submission
+        $("#symptomForm").submit(function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Get the selected value from the dropdown
+            var selectedSymptom = $("#symptom").val();
+            
+            // Redirect to another HTML page based on the selected value
+            switch(selectedSymptom) {
+                case "headache":
+                    window.location.href = "headache.html";
+                    break;
+                case "fatigue":
+                    window.location.href = "fatigue.html";
+                    break;
+                case "vomiting":
+                    window.location.href = "vomiting.html";
+                    break;
+                case "fever":
+                    window.location.href = "feaver.html";
+                    break;
+                case "nausea":
+                    window.location.href = "nausea.html";
+                    break;
+                case "cough":
+                    window.location.href = "cough.html";
+                    break;
+                case "muscleorjointpain":
+                    window.location.href = "muscleorjointpain.html";
+                    break;
+                case "dizziness":
+                    window.location.href = "dizziness.html";
+                    break;
+                case "chestpain":
+                    window.location.href = "chestpain.html";
+                    break;
+                case "swelling":
+                    window.location.href = "swelling.html";
+                    break;
+                default:
+                    // Handle other cases if needed
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

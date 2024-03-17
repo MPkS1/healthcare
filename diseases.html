@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseases.css">
+    <title>Select Disease</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Disease</h1>
+        <form id="diseaseForm">
+            <div class="form-group">
+                <label for="disease">Choose a disease:</label>
+                <select class="form-control" id="disease" name="disease">
+                    <option value="" disabled selected hidden>Select Disease</option>
+                    <option value="cancer">Cancer</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="bloodpressure">bloodpressure</option>
+                    <option value="malaria">malaria</option>
+                    <option value="asthama">asthama</option>
+                    <option value="Obseity">Obseity</option>
+                    <option value="heartstroke">heartstroke</option>
+                    <option value="typhoidfever">typhoidfever</option>
+                    <option value="kidneyfailure">kidneyfailure</option>
+                    <option value="skindiseases">skindiseases</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to handle form submission
+        $("#diseaseForm").submit(function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Get the selected value from the dropdown
+            var selectedDisease = $("#disease").val();
+            
+            // Redirect to another HTML page based on the selected value
+            switch(selectedDisease) {
+                case "cancer":
+                    window.location.href = "cancer.html";
+                    break;
+                case "diabetes":
+                    window.location.href = "diabetes.html";
+                    break;
+                case "bloodpressure":
+                    window.location.href = "bloodpressure.html";
+                    break;
+                case "malaria":
+                    window.location.href = "malaria.html";
+                    break;
+                case "Obseity":
+                    window.location.href = "Obseity.html";
+                    break;
+                case "asthama":
+                    window.location.href = "asthama.html";
+                    break;
+                case "heartstroke":
+                    window.location.href = "heartstroke.html";
+                    break;
+                case "typhoidfever":
+                    window.location.href = "typhoidfever.html";
+                    break;
+                case "kidneyfailure":
+                    window.location.href = "kidneyfailure.html";
+                    break;
+                case "skindiseases":
+                    window.location.href = "skindiseases.html";
+                    break;
+                default:
+                    // Do nothing or handle other cases
+            }
+        });
+    </script>
+</body>
+</html>qr5f

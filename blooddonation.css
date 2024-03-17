@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('blood1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Animation Delay */
+.animate__animated.animate__fadeInDown {
+    animation-delay: 0.5s;
+}
+
+.animate__animated.animate__fadeInUp {
+    animation-delay: 1s;
+}
+
+/* Colored Animations */
+@keyframes colorChange {
+    0% {
+        color: #ff5733; /* Red */
+    }
+    25% {
+        color: #ff33a6; /* Pink */
+    }
+    50% {
+        color: #ff3399; /* Magenta */
+    }
+    75% {
+        color: #9933ff; /* Purple */
+    }
+    100% {
+        color: #3333ff; /* Blue */
+    }
+}
+
+
+
+.animate__animated.animate__fadeInDown {
+    animation: colorChange 2s infinite alternate;
+}
+
+.animate__animated.animate__fadeInUp {
+    animation: colorChange 2s infinite alternate-reverse;
+}
