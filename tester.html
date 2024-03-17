@@ -15,27 +15,23 @@
             <button type="submit" formaction="symptoms.html">Symptoms</button>
             <button type="submit" formaction="diseases.html">Diseases</button>
             <button type="submit" formaction="blooddonation.html">blooddonation</button>
+            <button type="submit" formaction="as.html">voice </button>
         </form>
     </div>
+    </div>
     <script>
-        var backgroundImages = ["selectionpage.jpg", "login1.jpg", "login2.jpg"]; // Add more background image URLs as needed
-var currentBackgroundIndex = 0;
-
-function changeBackgroundImage() {
-    document.body.style.backgroundImage = "url('" + backgroundImages[currentBackgroundIndex] + "')";
-    currentBackgroundIndex++;
-    if (currentBackgroundIndex >= backgroundImages.length) {
-        currentBackgroundIndex = 0;
-    }
-}
-
-setInterval(changeBackgroundImage, 5000); // Change background image every 5 seconds
-
+    var backgroundImages = ["selectionpage.jpg", "login1.jpg", "login2.jpg"]; // Add more background image URLs as needed
+        var currentBackgroundIndex = 0;
         
-
-
-
+        function changeBackgroundImage() {
+            document.body.style.backgroundImage = "url('" + backgroundImages[currentBackgroundIndex] + "')";
+            currentBackgroundIndex++;
+            if (currentBackgroundIndex >= backgroundImages.length) {
+                currentBackgroundIndex = 0;
+            }
+        }
         
-    </script>
+        // Change background image every 5 seconds
+        setInterval(changeBackgroundImage, 5000);</script>
 </body>
 </html>
