@@ -17,5 +17,25 @@
             <button type="submit" formaction="blooddonation.html">blooddonation</button>
         </form>
     </div>
+    <script>
+        var backgroundImages = ["selectionpage.jpg", "login1.jpg", "login2.jpg"]; // Add more background image URLs as needed
+var currentBackgroundIndex = 0;
+
+function changeBackgroundImage() {
+    document.body.style.backgroundImage = "url('" + backgroundImages[currentBackgroundIndex] + "')";
+    currentBackgroundIndex++;
+    if (currentBackgroundIndex >= backgroundImages.length) {
+        currentBackgroundIndex = 0;
+    }
+}
+
+setInterval(changeBackgroundImage, 5000); // Change background image every 5 seconds
+
+        
+
+
+
+        
+    </script>
 </body>
 </html>
